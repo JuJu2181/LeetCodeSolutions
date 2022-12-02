@@ -35,6 +35,7 @@ Both list1 and list2 are sorted in non-decreasing order.
 #         self.next = next
 class Solution:
     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+# * Using While loop
 #         outlist = ListNode()
 #         list_ptr = outlist
         
@@ -55,6 +56,7 @@ class Solution:
 #             list_ptr.next = list2
         
 #         return outlist.next
+#* Using Recursion
         if list1 is None and list2 is None:
             return None
         if list1 is None:
